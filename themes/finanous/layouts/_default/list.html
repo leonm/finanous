@@ -1,0 +1,37 @@
+{{ define "main" }}
+<div class="grid">
+
+    {{ range .Pages }}
+        <div>
+            <article>
+                <header style="margin-bottom: 5px; margin-top: -100px; padding-bottom: 5px;">
+                    <img style="height: 42px;" src="/img/brands/commbank.png">{{.Title}}</header>
+                <p style="font-size: 14px; margin-bottom: 5px;">With Wealth Package LVR 60% or below​​ (with discountargin offer)</p>
+                <footer style="margin-top: 0px; padding-top: 15px; padding-bottom: 15px;">
+                <div class="grid">
+                    <div class="attribute"><p>Rate</p>5%</div>
+                    <div class="attribute"><p>Comparison</p>6%</div>
+                    <div class="attribute"><p>Type</p>Variable</div>
+                </div>
+                </footer>
+            </article>
+        </div>
+    {{ end }}
+
+    <div>
+        <a href="#">
+        <article>
+            <h2><i class="fa-solid fa-house"></i>Homeloans</h2>
+            
+        </article>
+        </a>
+    </div>
+    <div>
+        <a href="#">
+        <article>
+            <h2><i class="fa-solid fa-credit-card"></i>  Credit Cards</h2>
+        </article>
+        </a>
+    </div>
+</div>
+{{ end }}
