@@ -1,4 +1,20 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Finanous'
 theme = "finanous"
+
+[menu]
+[[menu.main]]
+  name = 'Homeloans'
+  url = '/homeloans'
+  weight = 10
+[[menu.main]]
+  name = 'Credit Cards'
+  url = '/credit-cards'
+  weight = 20
+
+
+[taxonomies]
+  homeloan = "homeloans"
+  credit-card = "credit-cards"
+  

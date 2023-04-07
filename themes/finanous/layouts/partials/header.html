@@ -1,9 +1,10 @@
 <nav class="container">
     <ul>
-        <li><a href="#"><img src="/img/logo.png"/></a></li>
-        <li><a href="#">Finanous</a></li>
-        <li><a href="#">Homeloans</a></li>
-        <li><a href="#">Credit Cards</a></li>
+        <li><a href="/"><img src="/img/logo.png"/></a></li>
+        <li><a href="/">{{ .Site.Title }}</a></li>
+        {{ range .Site.Menus.main }}
+            <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+        {{ end }}
     </ul>
     <ul>
     </ul>
