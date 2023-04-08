@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div class="grid">
     {{ $p := (printf "Params.%s" .Page.Data.Plural )}}
-    {{ $pages := where .Site.Pages $p "!=" nil }}
+    {{ $pages := where .Site.Pages.ByWeight $p "!=" nil }}
     {{ $paginator := .Paginate $pages }}
     {{ range $p := $paginator.Pages }}
         <div>
