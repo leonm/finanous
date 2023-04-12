@@ -2,20 +2,7 @@
 <div class="grid">
 
     {{ range .Page.Pages.ByWeight }}
-        <div>
-            <article>
-                <header style="margin-bottom: 5px; margin-top: -100px; padding-bottom: 5px;">
-                    <img style="height: 42px; padding-right: 6px" src="/img/brands/{{ .Params.logo }}">{{.Title}}</header>
-                <p style="font-size: 14px; margin-bottom: 5px;">{{ .Summary}}</p>
-                <footer style="margin-top: 0px; padding-top: 15px; padding-bottom: 15px;">
-                <div class="grid">
-                    <div class="attribute"><p>Rate</p>{{ .Params.rate }}%</div>
-                    <div class="attribute"><p>Comparison</p>{{ .Params.comparison }}%</div>
-                    <div class="attribute"><p>Type</p>{{ .Params.interest }}</div>
-                </div>
-                </footer>
-            </article>
-        </div>
+        {{- partial "product.html" . -}}
     {{ end }}
 
 {{ end }}
