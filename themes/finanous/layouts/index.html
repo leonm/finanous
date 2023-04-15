@@ -1,19 +1,34 @@
 {{ define "main" }}
+<h1 style="text-align: center;">Find and Compare Financial Products</h1>
 <div class="grid">
     <div>
         <a href="/homeloans/">
         <article>
-            <h2><i class="fa-solid fa-house"></i>Homeloans</h2>
-            
+            <h2><i class="fa-solid fa-house" style="margin-right: 48px"></i>Homeloans</h2>            
         </article>
         </a>
     </div>
     <div>
         <a href="/credit-cards/">
         <article>
-            <h2><i class="fa-solid fa-credit-card"></i>  Credit Cards</h2>
+            <h2><i class="fa-solid fa-credit-card" style="margin-right: 48px"></i>  Credit Cards</h2>
         </article>
         </a>
     </div>
 </div>
+
+<h1 style="text-align: center;">Companies We Track</h1>
+
+<div class="grid">
+{{ range where .Site.Pages "Params.class" "company" }}
+    <div>
+        <a href="{{ .Permalink }}">
+            <img style="height: 256px; padding-right: 6px" src="/img/brands/{{ .Params.logo }}">
+        </a>
+    </div>
+    
+{{ end }}
+</div>
+
+
 {{ end }}
