@@ -1,3 +1,4 @@
 ---
   title: "companies"
+  class: "section"
 ---

@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div class="grid">
+<div class="gridly">
     {{ $p := (printf "Params.%s" .Page.Data.Plural )}}
     {{ $pages := where .Site.Pages.ByWeight $p "!=" nil }}
     {{ $paginator := .Paginate $pages }}

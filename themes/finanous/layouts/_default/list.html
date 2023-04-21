@@ -1,8 +1,9 @@
 {{ define "main" }}
-<div class="grid">
+<div class="gridly">
 
     {{ range .Page.Pages.ByWeight }}
-        {{- partial "product.html" . -}}
+    {{ partial (printf "listing-%s.html" (index .Params "class")) . }}
+    {{ index .Params "class"}}
     {{ end }}
 
 {{ end }}

@@ -6,7 +6,7 @@
   comparison: "5.49"
   interest: "Variable"
   payment: "Interest Only"
-  product: "homeloan"
+  class: "homeloan"
   weight: 541
   sourceurl: https://www.nab.com.au/personal/home-loans
   linkurl: https://www.nab.com.au/personal/interest-rates-fees-and-charges/home-loan-interest-rates

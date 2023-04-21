@@ -28,9 +28,33 @@
       }
 
       article {
+        margin-top: 48px;
         padding-top: 32px;
         padding-bottom: 32px;
       }
+
+      .gridly {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        justify-items: stretch;
+        align-items: stretch;
+      }
+
+      .gridly h2 {
+        grid-column: 1 / span 2;
+      }
+
+      @media only screen and (min-width: 768px) {
+        .gridly {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .gridly h2 {
+            grid-column: 1 / span 3;
+        }
+    }         
   </style>
   
 </head>

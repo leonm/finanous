@@ -6,7 +6,7 @@
   comparison: "5.49"
   interest: "Variable"
   payment: "Principal & interest"
-  product: "homeloan"
+  class: "homeloan"
   weight: 541
   sourceurl: https://www.nab.com.au/personal/home-loans
 ---

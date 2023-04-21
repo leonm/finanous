@@ -1,0 +1,6 @@
+
+<h2>{{.Title}}</h2>
+
+{{ range .Pages.ByWeight }}
+    {{ partial (printf "listing-%s.html" (index .Params "class")) . }}
+{{ end }}
