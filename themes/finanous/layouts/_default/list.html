@@ -3,7 +3,6 @@
 
     {{ range .Page.Pages.ByWeight }}
     {{ partial (printf "listing-%s.html" (index .Params "class")) . }}
-    {{ index .Params "class"}}
     {{ end }}
 
 {{ end }}

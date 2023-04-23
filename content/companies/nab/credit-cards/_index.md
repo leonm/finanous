@@ -1,5 +1,5 @@
 ---
-  title: "Credit Card"
+  title: "Credit Cards"
   logo: "nab.png"
-  class: "company"
+  class: "products"
 ---
